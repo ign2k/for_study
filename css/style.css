@@ -25,6 +25,7 @@ body {
 .wrapper {
 	max-width: var(--wrapWidth);
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .container {
@@ -32,6 +33,7 @@ body {
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
+	padding:0 15px;
 }
 
 nav ul {
@@ -199,3 +201,272 @@ header .container {
 	color: var(--lightgrey);
 	line-height: 22px;
 }
+
+/* 3 секция: Service */
+
+.service {
+	display: flex;
+	background: #efeeee;
+}
+
+.service-slider {
+	width: 50%;
+	position: relative;
+}
+
+.slick-dots {
+	position: absolute;
+	width: 100%;
+	bottom: 40px;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.slick-dots button {
+	font-size: 0;
+	border: none;
+	cursor: pointer;
+	width: 12px;
+	height: 12px;
+	background: #bbcfcf;
+	border-radius: 50%;
+	margin: 0 6px;
+	outline: none;
+}
+
+.slick-active button {
+	background: var(--white);
+}
+
+.service-block {
+	width: 50%;
+	padding: 60px 0;
+}
+
+.service-container {
+	flex-wrap: wrap;
+	max-width: 800px;
+	margin: 60px auto 0;
+}
+
+.service-item {
+	width: 48%;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.service-item p {
+	font-size: 14px;
+	color: var(--lightgrey);
+	line-height: 24px;
+	text-align: left;
+	margin: 25px 0 0;
+}
+
+.slick-list,
+.slick-track {
+	height: 100%;
+}
+
+.slide img {
+	height: 100%;
+}
+
+/* 4 секция: Tours */
+.tours {
+	padding: 100px 0;
+	text-align: center;
+}
+
+.tours-container {
+	flex-wrap: wrap;
+	margin: 75px auto;
+}
+
+.tours-container a {
+	flex: 0 24%;
+	margin-bottom: 2%;
+}
+
+.tours-container a img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+}
+
+.more {
+	cursor: pointer;
+	border: none;
+	text-transform: uppercase;
+	color: var(--white);
+	background: var(--green);
+	font-size: 26px;
+	padding: 25px 50px;
+	border-radius: 5px;
+	box-shadow: 0 0 35px rgba(89,196,90, 0.65);
+	transition: 0.3s;
+}
+
+/* 4 секция: Contacts */
+
+.contacts {
+	padding: 100px 0 90px;
+	background: #efeeee;
+}
+ .contacts h2 {
+ 	margin: 0;
+ 	text-transform: uppercase;
+ 	font-weight: 400;
+ 	font-size: 28px;
+ 	color: var(--lightgrey);
+ 	text-align: center;
+ }
+
+ .contacts-container {
+ 	margin-top: 60px;
+ }
+
+.contact-info,
+.contact-form {
+	width: 50%;
+	border: 1px solid #c9c9c9;
+}
+
+.contact-info {
+	padding: 35px 30px 60px;
+}
+
+.footer-logo {
+	display: inline-block;
+}
+
+.footer-logo::after {
+	background: #efeeee;
+}
+
+.contact-info p {
+	margin: 40px 0 30px;
+	color: var(--lightgrey);
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.contact-item {
+	margin-bottom: 18px;
+	display: flex;
+	align-items: center;
+}
+
+.contact-item span,
+.contact-item a {
+	font-size: 14px;
+	color: #9b9b9b;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.contact-item i {
+	color: #ed7e01;
+	font-size: 20px;
+	margin-right: 20px;
+}
+
+.socials {
+	margin-top: 35px;
+	display: flex;
+}
+
+.socials a {
+	text-decoration: none;
+	width: 40px;
+	height: 40px;
+	background: #c9c9c9;
+	border-radius: 4px;
+	color: var(--white);
+	margin-right: 10px;
+	font-size: 20px;
+	line-height: 40px;
+	transition: 0.3s;
+	text-align: center;
+}
+
+.socials a:hover {
+	transform: scale(1.2);
+}
+
+.fb:hover {
+	background: #426782;
+}
+
+.gp:hover {
+	background: #084437;
+}
+
+.in:hover {
+	background: #286782;
+}
+
+.tw:hover {
+	background: #1DA1F2;
+}
+
+.contact-form {
+	padding: 30px;
+}
+
+.contact-form form {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	height: 40px;
+	border: none;
+	border-bottom: 1px solid #c9c9c9;
+	background: none;
+	font-size: 14px;
+	color:  var(--lightgrey);
+	margin-bottom: 30px;
+	outline: none;
+}
+
+.contact-form textarea {
+	height: 130px;
+	resize: none;
+}
+
+.contact-form button {
+	cursor: pointer;
+	border: none;
+	text-transform: uppercase;
+	color: var(--white);
+	background: var(--green);
+	font-size: 26px;
+	padding: 25px 50px;
+	border-radius: 5px;
+	box-shadow: 0 0 35px rgba(89,196,90, 0.65);
+	transition: 0.4s;
+	margin-top: 60px;
+	max-width: 230px;
+	align-self: center;
+}
+
+.contact-form button i {
+	margin-left: 30px;
+}
+
+}
+
+
+
+
+
+
+

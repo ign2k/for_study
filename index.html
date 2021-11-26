@@ -4,15 +4,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Discover</title>
+
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/media.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="css/aos.css">
 
 	<!--  Шрифты </!-->
 	<link rel="preconnect" href="https://fonts.googleapis.com"> 
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
 
-	<!--  Иконка сайта </!-->
+	<!--  Иконка сайта + </!-->
 	<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="icons/icons-16x16.png">
@@ -25,8 +30,8 @@
 	<div class="wrapper">
 		<header>
 			<div class="container">
-			<a href="#" class="logo">Discover</a>
-				<nav>
+			<a href="#" class="logo" data-aos="slide-right">Discover</a>
+				<nav data-aos="slide-left">
 					<ul>
 						<li><a href="#">Home</a></li>
 						<li><a href="#">Tour</a></li>
@@ -40,40 +45,38 @@
 
 		<section class="home">
 			<div class="container home-container">
-				<h1 class="home-title">Discover</h1>
-				<p class="home-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-				<a class="home-link" href="#">Booking tour</a>
+				<h1 class="home-title" data-aos="fade-in">Discover</h1>
+				<p class="home-text"data-aos="zoom-out-up">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididuntut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<a class="home-link"data-aos="zoom-out-up" href="#">Booking tour</a>
 			</div>
 		</section>
 
-	</div>
-
 	<section class="favorable">
-		<h2 class="section-title">Favorable</h2>
+		<h2 class="section-title" data-aos="zoom-in">Favorable</h2>
 		<div class="container fav-container">
-			<article class="fav-item">
-				<img class="fav-img" src="img/img1.jpg" alt="">
+			<article class="fav-item" data-aos="flip-right"> 
+				<img class="fav-img" src="https://picsum.photos/id/1018/600/600" alt="">
 				<div class="fav-text">
 					<h6>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</h6>
 					<p>Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non Sed ut perspiciatis unde omnis iste natus error sit.</p>
 				</div>
 			</article>
-			<article class="fav-item">
-				<img class="fav-img" src="https://picsum.photos/id/1003/600/600" alt="">
+			<article class="fav-item" data-aos="flip-right">
+				<img class="fav-img" src="https://picsum.photos/id/1023/600/600" alt="">
 				<div class="fav-text">
 					<h6>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</h6>
 					<p>Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non Sed ut perspiciatis unde omnis iste natus error sit.</p>
 				</div>
 			</article>
-			<article class="fav-item">
-				<img class="fav-img" src="https://picsum.photos/id/1003/600/600" alt="">
+			<article class="fav-item" data-aos="flip-right">
+				<img class="fav-img" src="https://picsum.photos/id/1035/600/600" alt="">
 				<div class="fav-text">
 					<h6>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</h6>
 					<p>Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non Sed ut perspiciatis unde omnis iste natus error sit.</p>
 				</div>
 			</article>
-			<article class="fav-item">
-				<img class="fav-img" src="https://picsum.photos/id/1003/600/600" alt="">
+			<article class="fav-item" data-aos="flip-right">
+				<img class="fav-img" src="https://picsum.photos/id/1044/600/600" alt="">
 				<div class="fav-text">
 					<h6>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</h6>
 					<p>Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non Sed ut perspiciatis unde omnis iste natus error sit.</p>
@@ -82,11 +85,138 @@
 		</div>
 	</section>
 
+	<section class="service">
+		<div class="service-slider">
+			<div class="slide">
+				<img src="https://picsum.photos/id/1018/1200/620">
+			</div>
+			<div class="slide">
+				<img src="https://picsum.photos/id/1023/1200/620">
+			</div>
+			<div class="slide">
+				<img src="https://picsum.photos/id/1035/1200/620">
+			</div>
+			<div class="slide">
+				<img src="https://picsum.photos/id/1044/1200/620">
+			</div>
+		</div>
+			<div class="service-block">
+				<h2 class="section-title" data-aos="zoom-in">Serivce</h2>
+				<div class="container service-container">
+					<div class="service-item" data-aos="flip-down">
+						<img src="img/ic-eat.png">
+						<p>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+					</div>
+					<div class="service-item" data-aos="flip-down">
+						<img src="img/ic-hotel.png">
+						<p>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+					</div>
+					<div class="service-item" data-aos="flip-down">
+						<img src="img/ic-aa.png">
+						<p>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+					</div>
+					<div class="service-item" >
+						<img src="img/ic-oto.png">
+						<p>sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+					</div>
+				</div>
+			</div>
+	</section>
+
+	<section class="tours">
+		<h2 class="section-title" data-aos="zoom-in">Tours</h2>
+		<div class="container tours-container" >
+			<a data-fancybox="tour" href="https://picsum.photos/id/1023/1200/1200" data-aos="zoom-out-down">
+				<img src="https://picsum.photos/id/1023/270/215">
+			</a>
+			<a data-fancybox="tour" href="https://picsum.photos/id/1011/1200/1200" data-aos="zoom-out-down">
+				<img src="https://picsum.photos/id/1011/270/215">
+			</a>
+			<a data-fancybox="tour" href="https://picsum.photos/id/1015/1200/1200"data-aos="zoom-out-down">
+				<img src="https://picsum.photos/id/1015/270/215">
+			</a>
+			<a data-fancybox="tour" href="https://picsum.photos/id/1016/1200/1200"data-aos="zoom-out-down">
+				<img src="https://picsum.photos/id/1016/270/215">
+			</a>
+			<a data-fancybox="tour" href="https://picsum.photos/id/1019/1200/1200"data-aos="zoom-out-down">
+				<img src="https://picsum.photos/id/1019/270/215">
+			</a>
+			<a data-fancybox="tour" href="https://picsum.photos/id/1001/1200/1200"data-aos="zoom-out-down">
+				<img src="https://picsum.photos/id/1001/270/215">
+			</a>
+			<a data-fancybox="tour" href="https://picsum.photos/id/1038/1200/1200"data-aos="zoom-out-down">
+				<img src="https://picsum.photos/id/1038/270/215">
+			</a>
+			<a data-fancybox="tour" href="https://picsum.photos/id/1039/1200/1200"data-aos="zoom-out-down">
+				<img src="https://picsum.photos/id/1039/270/215">
+			</a>
+			<a data-fancybox="tour" href="https://picsum.photos/id/1049/1200/1200"data-aos="zoom-out-down">
+				<img src="https://picsum.photos/id/1049/270/215">
+			</a>
+			<a data-fancybox="tour" href="https://picsum.photos/id/1050/1200/1200"data-aos="zoom-out-down">
+				<img src="https://picsum.photos/id/1050/270/215">
+			</a>
+			<a data-fancybox="tour" href="https://picsum.photos/id/1051/1200/1200"data-aos="zoom-out-down">
+				<img src="https://picsum.photos/id/1051/270/215">
+			</a>
+			<a data-fancybox="tour" href="https://picsum.photos/id/1056/1200/1200"data-aos="zoom-out-down">
+				<img src="https://picsum.photos/id/1056/270/215">
+			</a>
+		</div>
+		<button class="more" data-aos="slide-down">See more</button>
+	</section>
+
+	<section class="contacts" data-aos="zoom-out-right">
+		<h2 data-aos="zoom-in">Contact</h2>
+		<div class="container contacts-container">
+			<div class="contact-info">
+				<a href="#" class="logo footer-logo">Discover</a>
+				<p>Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+				<div class="contact-item">
+					<i class="fas fa-map-marker-alt"></i>
+					<span>So 188 Nguyen Xien, Thanh Xuan, Ha Noi</span>
+				</div>
+				<div class="contact-item">
+					<i class="fas fa-phone-square-alt"></i>
+					<a href="tel:+84 985 234 812">+84 985 234 812</a>
+				</div>
+				<div class="contact-item">
+					<i class="fas fa-envelope"></i>
+					<a href="mailto:Huuluong.Huuluong.arc@gmail.com.com">Huuluong.arc@gmail.com</a>
+				</div>
+				<div class="contact-item">
+					<i class="fas fa-globe-americas"></i>
+					<a target="_blank" href="//kientructrinhgia.vn">kientructrinhgia.vn</a>
+				</div>
+			<div class="socials">
+				<a class="fb" href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+				<a class="gp" href="#" target="_blank"><i class="fab fa-google-plus-g"></i></a>
+				<a class="in" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+				<a class="tw" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+			</div>
+			</div>
+			<div class="contact-form">
+				<form action="">
+					<input type="text" placeholder="Your name">
+					<input type="email" placeholder="Email">
+					<textarea placeholder="Message"></textarea>
+					<button type="Submit" data-aos="top-center">Send<i class="fas fa-envelope"></i></button>
+				</form>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+
 
 
 	
 
 	<script src="https://code.jquery.com/jquery.min.js"></script>
-	<script type="js/scripts.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script src="js/aos.js"></script>
 </body>
 </html>
